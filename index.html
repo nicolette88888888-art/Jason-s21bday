@@ -1,236 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#080d19">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080d19">
 <title>For Jason | Chapter 21</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 <style>
-:root{--night:#080d19;--gold:#d7bb7b;--cream:#f6eee1;--muted:#a7acb8;--line:rgba(215,187,123,.25)}
-*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--night);color:var(--cream);font-family:'DM Sans',sans-serif;overflow-x:hidden}
-.stars{position:fixed;inset:0;pointer-events:none;opacity:.38;background-image:radial-gradient(1px 1px at 12% 21%,#fff 99%,transparent),radial-gradient(1px 1px at 78% 15%,#fff 99%,transparent),radial-gradient(2px 2px at 88% 55%,#d7bb7b 99%,transparent),radial-gradient(1px 1px at 26% 74%,#fff 99%,transparent),radial-gradient(1px 1px at 61% 83%,#fff 99%,transparent);background-size:310px 290px;z-index:-1}
-a{color:inherit} .nav{max-width:1000px;margin:auto;padding:28px 24px;display:flex;justify-content:space-between;align-items:center}.brand,.eyebrow,.countdown strong,.countdown span{font-family:'DM Mono',monospace;letter-spacing:.18em;text-transform:uppercase}.brand,.eyebrow{color:var(--gold)}.brand{font-size:12px}.nav-links{display:flex;gap:22px}.nav-links a{font-size:11px;letter-spacing:.12em;text-decoration:none;text-transform:uppercase;color:#c5c2bf}
-main{position:relative}.hero{padding:40px 0 40px}.hero-inner{max-width:1000px;margin:0 auto;padding:0 24px}.eyebrow{font-size:11px}.hero h1{font:400 clamp(52px,11vw,92px)/.95 'Playfair Display',serif;margin:18px 0 20px}.hero h1 em{color:var(--gold);font-style:italic}.hero-sub{font-size:16px;line-height:1.7;color:#c0c5d1;max-width:560px}.rule{height:1px;background:linear-gradient(90deg,transparent,rgba(215,187,123,.7),transparent);margin:28px 0 18px}.countdown{display:flex;gap:22px;justify-content:flex-start;align-items:stretch;flex-wrap:wrap;margin-top:14px}.countdown .unit{min-width:88px}.countdown strong{display:block;font-size:28px;line-height:1;color:var(--gold);font-weight:500;margin-bottom:8px}.countdown span{font-size:10px;color:var(--muted)}.scroll-cue{display:inline-block;margin-top:22px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);text-decoration:none;font-family:'DM Mono',monospace}
-.section{max-width:1050px;margin:0 auto;padding:90px 24px 0}.head{max-width:760px;margin:0 auto 36px;text-align:center}.head h2{font:400 clamp(32px,5vw,54px)/1.08 'Playfair Display',serif;margin:8px 0 12px}.head h2 em{font-style:italic;color:var(--gold)}.head p{font-size:18px;line-height:1.8;color:#b8bdc4}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.memory{background:rgba(238,229,213,.95);color:#211d1c;padding:8px 8px 18px;box-shadow:0 20px 55px rgba(0,0,0,.45);transform:rotate(var(--tilt));transition:transform .24s ease,box-shadow .24s ease}.memory:hover{transform:rotate(0deg) translateY(-6px);box-shadow:0 26px 70px rgba(0,0,0,.5)}.memory .photo{overflow:hidden}.memory .photo img{display:block;width:100%;height:320px;object-fit:cover;background:#17253d}.memory .caption{padding:14px 10px 0;text-align:center;font:italic 24px/1.25 'Playfair Display',serif;color:#2a2422}.memory .meta{padding-top:8px;text-align:center;font:11px 'DM Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#725f4a}
-.letter-section{padding-top:96px}.letter-shell{max-width:820px;margin:0 auto;position:relative}.envelope-wrap{display:flex;justify-content:center;padding-top:8px}.envelope{position:relative;width:min(92vw,520px);aspect-ratio:1.55;background:linear-gradient(135deg,#d8c39b,#f4e3bf 55%,#cba96b);border:none;border-radius:8px;box-shadow:0 25px 60px rgba(0,0,0,.4);cursor:pointer;transition:transform .2s ease}.envelope:hover{transform:translateY(-4px)}.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 49.5%,#8c7241 49.5%,#8c7241 50.5%,transparent 50.5%);clip-path:polygon(0 0,100% 0,50% 48%)}.envelope:after{content:"";position:absolute;inset:0;background:linear-gradient(225deg,transparent 49.5%,#8c7241 49.5%,#8c7241 50.5%,transparent 50.5%);clip-path:polygon(0 0,100% 0,50% 48%)}.seal{position:absolute;top:53%;left:50%;transform:translate(-50%,-50%);width:68px;height:68px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f4dfae,#bb884a);box-shadow:0 0 0 10px rgba(126,94,39,.12)}.address{position:absolute;left:12%;right:12%;bottom:18%;text-align:center;font:italic 28px 'Playfair Display',serif;color:#443625;letter-spacing:.04em}.status{margin-top:22px;text-align:center;color:#a9b2c4;font:11px 'DM Mono',monospace;letter-spacing:.12em;text-transform:uppercase}.paper{max-width:760px;margin:26px auto 0;background:#eee2d0;color:#1f1d1b;padding:28px 26px 20px;border-radius:6px;box-shadow:0 18px 52px rgba(0,0,0,.32);display:none}.paper.show{display:block}.paper h3{margin:0 0 14px;font:400 28px 'Playfair Display',serif}.paper p{margin:0 0 18px;font:18px/1.85 'Playfair Display',serif;color:#2d2a27;white-space:pre-line}.signature{text-align:right;font-style:italic;margin-top:18px}.button-row{display:flex;justify-content:center;margin-top:18px}.close-btn{background:transparent;border:1px solid rgba(215,187,123,.55);color:var(--gold);padding:12px 18px;font:12px 'DM Mono',monospace;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}.ending{padding:110px 0 100px;max-width:960px;margin:0 auto;text-align:center}.ending h2{font:400 clamp(32px,6vw,58px)/1.08 'Playfair Display',serif;margin:12px 0 18px}.ending h2 em{font-style:italic;color:var(--gold)}.toast{position:fixed;bottom:26px;left:50%;transform:translate(-50%,160px);background:#e9d8b6;color:#182339;padding:14px 22px;border-radius:6px;box-shadow:0 20px 36px rgba(0,0,0,.35);font:12px 'DM Mono',monospace;letter-spacing:.12em;text-transform:uppercase;z-index:20;transition:transform .3s ease}.toast.show{transform:translate(-50%,0)}
-@media (max-width: 760px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.memory .photo img{height:260px}.nav{padding:22px 18px}.hero-inner,.section{padding-left:18px;padding-right:18px}.}
-@media (max-width: 560px){.nav-links{gap:12px}.nav-links a{font-size:9px;letter-spacing:.1em}.gallery{grid-template-columns:1fr}.memory .photo img{height:230px}.countdown{gap:12px}.countdown .unit{min-width:64px}.countdown strong{font-size:22px}.status{letter-spacing:.08em}.paper{padding:22px 18px}.}
-</style>
+:root{--night:#080d19;--gold:#d7bb7b;--cream:#f6eee1;--muted:#a7acb8;--line:rgba(215,187,123,.25)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--night);color:var(--cream);font-family:'DM Sans',sans-serif;overflow-x:hidden}.stars{position:fixed;inset:0;pointer-events:none;opacity:.38;background-image:radial-gradient(1px 1px at 12% 21%,#fff 99%,transparent),radial-gradient(1px 1px at 78% 15%,#fff 99%,transparent),radial-gradient(2px 2px at 88% 55%,#d7bb7b 99%,transparent),radial-gradient(1px 1px at 26% 74%,#fff 99%,transparent),radial-gradient(1px 1px at 61% 83%,#fff 99%,transparent);background-size:310px 290px;z-index:-1}a{color:inherit}.nav{max-width:1000px;margin:auto;padding:28px 24px;display:flex;justify-content:space-between;align-items:center}.brand,.eyebrow,.countdown strong,.countdown span{font-family:'DM Mono',monospace;letter-spacing:.18em;text-transform:uppercase}.brand,.eyebrow{color:var(--gold)}.brand{font-size:12px}.nav-links{display:flex;gap:22px}.nav-links a{font-size:11px;letter-spacing:.12em;text-decoration:none;text-transform:uppercase;color:#c5c2bf}main{position:relative}.hero{padding:40px 0 40px}.hero-inner{max-width:1000px;margin:0 auto;padding:0 24px}.eyebrow{font-size:11px}.hero h1{font:400 clamp(52px,11vw,92px)/.95 'Playfair Display',serif;margin:18px 0 20px}.hero h1 em{color:var(--gold);font-style:italic}.hero-sub{font-size:16px;line-height:1.7;color:#c0c5d1;max-width:560px}.rule{height:1px;background:linear-gradient(90deg,transparent,rgba(215,187,123,.7),transparent);margin:28px 0 18px}.countdown{display:flex;gap:22px;justify-content:flex-start;align-items:stretch;flex-wrap:wrap;margin-top:14px}.countdown .unit{min-width:88px}.countdown strong{display:block;font-size:28px;line-height:1;color:var(--gold);font-weight:500;margin-bottom:8px}.countdown span{font-size:10px;color:var(--muted)}.scroll-cue{display:inline-block;margin-top:22px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);text-decoration:none;font-family:'DM Mono',monospace}.section{max-width:1050px;margin:0 auto;padding:90px 24px 0}.head{max-width:760px;margin:0 auto 36px;text-align:center}.head h2{font:400 clamp(32px,5vw,54px)/1.08 'Playfair Display',serif;margin:8px 0 12px}.head h2 em{font-style:italic;color:var(--gold)}.head p{font-size:18px;line-height:1.8;color:#b8bdc4}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.memory{background:rgba(238,229,213,.95);color:#211d1c;padding:8px 8px 18px;box-shadow:0 20px 55px rgba(0,0,0,.45);transform:rotate(var(--tilt));transition:transform .24s ease,box-shadow .24s ease}.memory:hover{transform:rotate(0deg) translateY(-6px);box-shadow:0 26px 70px rgba(0,0,0,.5)}.memory .photo{overflow:hidden}.memory .photo img{display:block;width:100%;height:320px;object-fit:cover;background:#17253d}.memory .caption{padding:14px 10px 0;text-align:center;font:italic 24px/1.25 'Playfair Display',serif;color:#2a2422}.memory .meta{padding-top:8px;text-align:center;font:11px 'DM Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:#725f4a}.letter-section{padding-top:96px}.letter-shell{max-width:820px;margin:0 auto;position:relative}.envelope-wrap{display:flex;justify-content:center;padding-top:8px}.envelope{position:relative;width:min(92vw,520px);aspect-ratio:1.55;background:linear-gradient(135deg,#d8c39b,#f4e3bf 55%,#cba96b);border:none;border-radius:8px;box-shadow:0 25px 60px rgba(0,0,0,.4);cursor:pointer;transition:transform .2s ease}.envelope:hover{transform:translateY(-4px)}.envelope:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 49.5%,#8c7241 49.5%,#8c7241 50.5%,transparent 50.5%);clip-path:polygon(0 0,100% 0,50% 48%)}.envelope:after{content:"";position:absolute;inset:0;background:linear-gradient(225deg,transparent 49.5%,#8c7241 49.5%,#8c7241 50.5%,transparent 50.5%);clip-path:polygon(0 0,100% 0,50% 48%)}.seal{position:absolute;top:53%;left:50%;transform:translate(-50%,-50%);width:68px;height:68px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f4dfae,#bb884a);box-shadow:0 0 0 10px rgba(126,94,39,.12)}.address{position:absolute;left:12%;right:12%;bottom:18%;text-align:center;font:italic 28px 'Playfair Display',serif;color:#443625;letter-spacing:.04em}.status{margin-top:22px;text-align:center;color:#a9b2c4;font:11px 'DM Mono',monospace;letter-spacing:.12em;text-transform:uppercase}.paper{max-width:760px;margin:26px auto 0;background:#eee2d0;color:#1f1d1b;padding:28px 26px 20px;border-radius:6px;box-shadow:0 18px 52px rgba(0,0,0,.32);display:none}.paper.show{display:block}.paper h3{margin:0 0 14px;font:400 28px 'Playfair Display',serif}.paper p{margin:0 0 18px;font:18px/1.85 'Playfair Display',serif;color:#2d2a27;white-space:pre-line}.signature{text-align:right;font-style:italic;margin-top:18px}.button-row{display:flex;justify-content:center;margin-top:18px}.close-btn{background:transparent;border:1px solid rgba(215,187,123,.55);color:var(--gold);padding:12px 18px;font:12px 'DM Mono',monospace;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}.ending{padding:110px 0 100px;max-width:960px;margin:0 auto;text-align:center}.ending h2{font:400 clamp(32px,6vw,58px)/1.08 'Playfair Display',serif;margin:12px 0 18px}.ending h2 em{font-style:italic;color:var(--gold)}.toast{position:fixed;bottom:26px;left:50%;transform:translate(-50%,160px);background:#e9d8b6;color:#182339;padding:14px 22px;border-radius:6px;box-shadow:0 20px 36px rgba(0,0,0,.35);font:12px 'DM Mono',monospace;letter-spacing:.12em;text-transform:uppercase;z-index:20;transition:transform .3s ease}.toast.show{transform:translate(-50%,0)}@media (max-width:760px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.memory .photo img{height:260px}.nav{padding:22px 18px}.hero-inner,.section{padding-left:18px;padding-right:18px}}@media (max-width:560px){.nav-links{gap:12px}.nav-links a{font-size:9px;letter-spacing:.1em}.gallery{grid-template-columns:1fr}.memory .photo img{height:230px}.countdown{gap:12px}.countdown .unit{min-width:64px}.countdown strong{font-size:22px}.status{letter-spacing:.08em}.paper{padding:22px 18px}}</style>
 </head>
-<body>
-<div class="stars" aria-hidden="true"></div>
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
-<nav class="nav">
-  <div class="brand">J.C. / XXI</div>
-  <div class="nav-links"><a href="#memories">Memories</a><a href="#letter">The letter</a></div>
-</nav>
-<main>
-<section class="hero">
-  <div class="hero-inner">
-    <div class="eyebrow" id="hero-eyebrow">A new chapter approaches</div>
-    <h1>Jason<em>.</em></h1>
-    <div class="hero-sub" id="hero-sub">THE STORY GETS BETTER ON DECEMBER 4, BUT SOME THINGS ARE WORTH READING EARLY.</div>
-    <div class="rule"></div>
-    <div class="countdown" id="countdown" aria-label="Countdown to birthday">
-      <div class="unit"><strong id="days">00</strong><span>Days</span></div>
-      <div class="unit"><strong id="hours">00</strong><span>Hours</span></div>
-      <div class="unit"><strong id="minutes">00</strong><span>Minutes</span></div>
-      <div class="unit"><strong id="seconds">00</strong><span>Seconds</span></div>
-    </div>
-    <a href="#memories" class="scroll-cue">Scroll to memories</a>
-  </div>
-</section>
-
-<section class="section" id="memories">
-  <div class="head">
-    <div class="eyebrow">01 / A story worth keeping</div>
-    <h2>All the little <em>moments.</em></h2>
-    <p>Some days deserve a second look. And some people make even the ordinary days worth remembering.</p>
-  </div>
-
-  <div class="gallery" id="gallery"></div>
-</section>
-
-<section class="section letter-section" id="letter">
-  <div class="head">
-    <div class="eyebrow">02 / Saved for you</div>
-    <h2>One more thing, <em>Jason.</em></h2>
-    <p>Some things are better written down. This one is just for you.</p>
-  </div>
-
-  <div class="letter-shell">
-    <div class="envelope-wrap">
-      <button class="envelope" id="envelope" aria-label="Open letter to Jason">
-        <span class="seal"></span>
-        <span class="address">To Jason</span>
-      </button>
-    </div>
-    <div class="status" id="status">✦ THIS LETTER UNLOCKS DECEMBER 4 AT MIDNIGHT ✦</div>
-    <article class="paper" id="paper">
-      <h3>Dear Jason,</h3>
-      <div id="letter-content"></div>
-      <div class="signature">Yours truly,<br>Nicolette Audrey Tandradi nata</div>
-      <div class="button-row"><button class="close-btn" id="close-letter">Close letter</button></div>
-    </article>
-  </div>
-</section>
-
-<section class="ending">
-  <div class="eyebrow">03 / Across every universe</div>
-  <h2>In every universe,<br><em>I'm glad I found you.</em></h2>
-  <p class="hero-sub">Here's to the stories we have yet to tell.</p>
-</section>
-</main>
-
+<body><div class="stars" aria-hidden="true"></div><div class="toast" id="toast" role="status" aria-live="polite"></div>
+<nav class="nav"><div class="brand">J.C. / XXI</div><div class="nav-links"><a href="#memories">Memories</a><a href="#letter">The letter</a></div></nav>
+<main><section class="hero"><div class="hero-inner"><div class="eyebrow" id="hero-eyebrow">A new chapter approaches</div><h1>Jason<em>.</em></h1><div class="hero-sub" id="hero-sub">THE STORY GETS BETTER ON DECEMBER 4, BUT SOME THINGS ARE WORTH READING EARLY.</div><div class="rule"></div><div class="countdown" id="countdown" aria-label="Countdown to birthday"><div class="unit"><strong id="days">00</strong><span>Days</span></div><div class="unit"><strong id="hours">00</strong><span>Hours</span></div><div class="unit"><strong id="minutes">00</strong><span>Minutes</span></div><div class="unit"><strong id="seconds">00</strong><span>Seconds</span></div></div><a href="#memories" class="scroll-cue">Scroll to memories</a></div></section>
+<section class="section" id="memories"><div class="head"><div class="eyebrow">01 / A story worth keeping</div><h2>All the little <em>moments.</em></h2><p>Some days deserve a second look. And some people make even the ordinary days worth remembering.</p></div><div class="gallery" id="gallery"></div></section>
+<section class="section letter-section" id="letter"><div class="head"><div class="eyebrow">02 / Saved for you</div><h2>One more thing, <em>Jason.</em></h2><p>Some things are better written down. This one is just for you.</p></div><div class="letter-shell"><div class="envelope-wrap"><button class="envelope" id="envelope" aria-label="Open letter to Jason"><span class="seal"></span><span class="address">To Jason</span></button></div><div class="status" id="status">✦ THIS LETTER UNLOCKS DECEMBER 4 AT MIDNIGHT ✦</div><article class="paper" id="paper"><h3>Dear Jason,</h3><div id="letter-content"></div><div class="signature">Yours truly,<br>Nicolette Audrey Tandradi nata</div><div class="button-row"><button class="close-btn" id="close-letter">Close letter</button></div></article></div></section>
+<section class="ending"><div class="eyebrow">03 / Across every universe</div><h2>In every universe,<br><em>I'm glad I found you.</em></h2><p class="hero-sub">Here's to the stories we have yet to tell.</p></section></main>
 <script>
-const UNLOCK = Date.parse('2026-12-04T00:00:00-05:00');
-const LETTER_PARAGRAPHS = [
-  `Happy birthday! I am not sure when you will read this letter or if you even will, to be truly honest, but I think part of this is hoping you do read it and also that I risk you never will. I hope you don't see this as an attempt at closure, as that means the end of something.`,
-  `I am sorry for the pain I have caused you. I just wanted to tell you I forgive you, and I truly believe in my heart that you would not do this again to anyone. I have faith in the Lord that He brought us together to change and grow both of us. I know you can grow and change for the better; I believe that God is working in your life exponentially. Have faith in His plan in a way I cannot fathom yet. I am sad I had to be your lesson and ever so grateful to even be a part of your life.`,
-  `I am sad our chapter had to end, but I hope you know it was the most formative and, painfully, my favorite one as well.`,
-  `I hope you know that you are loved. Loved by God and loved by the people in your life. I hope the time we had spent together taught you unconditional love. I hope you can see the care I put into my love for you and can see how wholly I devoted myself to you. I understand now that I must prioritize God and have a whole devotion only to Him, but I hope that, at the very least, you know that someone on this Earth loved you so greatly.`,
-  `I love you, Jason. I still do.`,
-  `I hope you know I think of you in the best light still and I hold a lot of admiration for you still. Don’t keep punishing yourself too long now. I am sorry I held onto my anger for so long. I think it was wrong of me to act so immature and I wish I had more patience.`,
-  `Ay not too much now that is the love of my life. You are too hard on yourself.`,
-  `I am grateful you know that God always has your back, I hope to run into you still from time to time, you know.`,
-  `I think, to be truly honest, in my mind you were my husband. I really felt like we were married. I think I am grateful to have been so close to you, and yet I regret how we did not hold back. I think marriage is something I should not have dipped my toe in so casually, as God intended his people to regard it as a commitment not only to each other but to Him. I only regret that our relationship did not reflect God.`,
-  `If we ever got another chance, or if I somehow got a time machine, I would still try again in a heartbeat; I would just change that. I think I finally learned the importance of respecting God, even in dating, and I know He is truly the only one who can fix the hole in my heart that was there even before you. I hope you can forgive the rash decisions I made during our relationship.`,
-  `I hope you know how much you have touched my life and the everlasting impact you will have on me. I did not realize how much I would miss you, but then again, you were my favorite person pretty much since we met.`,
-  `You always made me feel better, and you could make me laugh even when I thought I never could again, and I am so grateful you could bring such joy to my eyes. I miss running into your arms when I saw you, and I miss the comforting scent of your cheeks.`,
-  `I crave Veelvta mac and cheese all the time now, but I can never make it without crying, so now all I eat is Kraft. It doesn’t taste the same without you. I did not realize how much we ate together and how it was my favorite thing to do even if we sat beside each other on our own devices.`,
-  `I miss walking around aimlessly and exploring new places with you because you always wanted to get the most out of everything.`,
-  `Most of all, I miss listening to you talk so passionately about such a niche topic. It never bored me, and you could always make something sound so interesting. I loved the twinkle in your eyes as you talked about something you cared about and how you would explain the intricacies of it.`,
-  `I would have loved you with a goatee, and even when you were bald.`,
-  `I miss how you would look at me and how you said no. I thought it meant what we had was genuine. I miss holding you and squeezing you and never wanting to let go.`,
-  `I know you aren’t the same person I fell in love with, but I hope you can grow into someone that you know God will be proud of. I believe you can do it and that He loves you.`,
-  `I hope that one day I can meet the person you become and that I can meet you there.`,
-  `I say all this not to make you feel bad, but rather to reassure you that someone does care and that you are important. You are so incredible and deserving of another chance. I know that I am not the one who can determine that, but I know God will provide if you let Him.`,
-  `I will try not to be as immature and let my own selfish desires get in the way.`,
-  `When we first met, I told you what my intentions were. My only intention was to brighten up your day and make sure you were happy.`,
-  `I still feel the same way, Jason. I hope you can be happy. I am sad to hear you say we are not meant to be, but I think we did meet for a reason. I have always felt God put you in my life for a reason. I know He has been trying to shepherd me for so long, and out of fear and stubbornness I sinfully resisted, but I know I am his child and I need to put all my faith into Him.`,
-  `My Father, the Lord, has my back, and He can fix anything.`,
-  `Thank you for letting me come into your life. I can only pray you remember me well and the many times we laughed together. I hope you can forgive yourself and know I am not angry anymore. I just wish I were more patient so I could have held your hand a little longer.`,
-  `I don’t know how much time I have left to even peek and see you or what the future holds. I can only pray that God gives me one more chance.`,
-  `I actually don’t even know if you will open this and read it. I would understand if you didn’t. I am just a girl to you now.`,
-  `If you do read this, can you call me? Can you call me baba and ask me how my day was?`,
-  `I miss your voice a lot. Like a lot a lot. And I miss how much I got to tell u to stay with me.`,
-  `But happy birthday jason. I know the future God has for you will be bright regardless.`
+const UNLOCK=Date.parse('2026-12-04T00:00:00-05:00');
+const LETTER_PARAGRAPHS=[
+`Happy birthday! I am not sure when you will read this letter or if you even will, to be truly honest, but I think part of this is hoping you do read it and also that I risk you never will. I hope you don't see this as an attempt at closure, as that means the end of something.`,
+`I am sorry for the pain I have caused you. I just wanted to tell you I forgive you, and I truly believe in my heart that you would not do this again to anyone. I have faith in the Lord that He brought us together to change and grow both of us. I know you can grow and change for the better; I believe that God is working in your life exponentially. Have faith in His plan in a way I cannot fathom yet. I am sad I had to be your lesson and ever so grateful to even be a part of your life.`,
+`I am sad our chapter had to end, but I hope you know it was the most formative and, painfully, my favorite one as well.`,
+`I hope you know that you are loved. Loved by God and loved by the people in your life. I hope the time we had spent together taught you unconditional love. I hope you can see the care I put into my love for you and can see how wholly I devoted myself to you. I understand now that I must prioritize God and have a whole devotion only to Him, but I hope that, at the very least, you know that someone on this Earth loved you so greatly.`,
+`I love you, Jason. I still do.`,
+`I hope you know I think of you in the best light still and I hold a lot of admiration for you still. Don’t keep punishing yourself too long now. I am sorry I held onto my anger for so long. I think it was wrong of me to act so immature and I wish I had more patience.`,
+`Ay not too much now that is the love of my life. You are too hard on yourself.`,
+`I am grateful you know that God always has your back, I hope to run into you still from time to time, you know.`,
+`I think, to be truly honest, in my mind you were my husband. I really felt like we were married. I think I am grateful to have been so close to you, and yet I regret how we did not hold back. I think marriage is something I should not have dipped my toe in so casually, as God intended his people to regard it as a commitment not only to each other but to Him. I only regret that our relationship did not reflect God.`,
+`If we ever got another chance, or if I somehow got a time machine, I would still try again in a heartbeat; I would just change that. I think I finally learned the importance of respecting God, even in dating, and I know He is truly the only one who can fix the hole in my heart that was there even before you. I hope you can forgive the rash decisions I made during our relationship.`,
+`I hope you know how much you have touched my life and the everlasting impact you will have on me. I did not realize how much I would miss you, but then again, you were my favorite person pretty much since we met.`,
+`You always made me feel better, and you could make me laugh even when I thought I never could again, and I am so grateful you could bring such joy to my eyes. I miss running into your arms when I saw you, and I miss the comforting scent of your cheeks.`,
+`I crave Veelvta mac and cheese all the time now, but I can never make it without crying, so now all I eat is Kraft. It doesn’t taste the same without you. I did not realize how much we ate together and how it was my favorite thing to do even if we sat beside each other on our own devices.`,
+`I miss walking around aimlessly and exploring new places with you because you always wanted to get the most out of everything.`,
+`Most of all, I miss listening to you talk so passionately about such a niche topic. It never bored me, and you could always make something sound so interesting. I loved the twinkle in your eyes as you talked about something you cared about and how you would explain the intricacies of it.`,
+`I would have loved you with a goatee, and even when you were bald.`,
+`I miss how you would look at me and how you said no. I thought it meant what we had was genuine. I miss holding you and squeezing you and never wanting to let go.`,
+`I know you aren’t the same person I fell in love with, but I hope you can grow into someone that you know God will be proud of. I believe you can do it and that He loves you.`,
+`I hope that one day I can meet the person you become and that I can meet you there.`,
+`I say all this not to make you feel bad, but rather to reassure you that someone does care and that you are important. You are so incredible and deserving of another chance. I know that I am not the one who can determine that, but I know God will provide if you let Him.`,
+`I will try not to be as immature and let my own selfish desires get in the way.`,
+`When we first met, I told you what my intentions were. My only intention was to brighten up your day and make sure you were happy.`,
+`I still feel the same way, Jason. I hope you can be happy. I am sad to hear you say we are not meant to be, but I think we did meet for a reason. I have always felt God put you in my life for a reason. I know He has been trying to shepherd me for so long, and out of fear and stubbornness I sinfully resisted, but I know I am his child and I need to put all my faith into Him.`,
+`My Father, the Lord, has my back, and He can fix anything.`,
+`Thank you for letting me come into your life. I can only pray you remember me well and the many times we laughed together. I hope you can forgive yourself and know I am not angry anymore. I just wish I were more patient so I could have held your hand a little longer.`,
+`I don’t know how much time I have left to even peek and see you or what the future holds. I can only pray that God gives me one more chance.`,
+`I actually don’t even know if you will open this and read it. I would understand if you didn’t. I am just a girl to you now.`,
+`If you do read this, can you call me? Can you call me baba and ask me how my day was?`,
+`I miss your voice a lot. Like a lot a lot. And I miss how much I got to tell u to stay with me.`,
+`But happy birthday jason. I know the future God has for you will be bright regardless.`
 ];
-const PHOTOS = [
- ['The beginning','A favorite day to remember'],
- ['One of my favorite days','A little piece of us'],
- ['The little things','The ordinary moments that meant everything'],
- ['I still laugh about this','The kind of smile that stayed'],
- ['The best kind of ordinary','The calm between all the chaos'],
- ['Never a dull moment','Every memory somehow became a favorite'],
- ['Just us','The kind of moment you wanted to keep forever'],
- ['A moment worth keeping','This one always felt like home'],
- ['Then and now','The more I look back, the more I treasure it'],
- ['Another favorite','A small piece of a bigger story'],
- ['Everything in between','All the little things that made it real'],
- ['More to come','The story isn’t over yet']
-];
-const IMAGE_NAMES = [
- 'IMG_4428.jpeg',
- 'IMG_4427.jpeg',
- 'IMG_4426.jpeg',
- 'IMG_4429.jpeg',
- 'IMG_4425.jpeg',
- 'IMG_5695.jpeg',
- 'IMG_0352.jpeg',
- 'IMG_8727.jpeg',
- 'IMG_0386.jpeg',
- 'DSCF2448.jpeg',
- 'IMG_7767.jpeg',
- 'IMG_4697.jpeg'
-];
-const $ = id => document.getElementById(id);
-let unlocked = false;
-let open = false;
-let timer = null;
-
-function toast(message) {
-  $('toast').textContent = message;
-  $('toast').classList.add('show');
-  clearTimeout(timer);
-  timer = setTimeout(() => $('toast').classList.remove('show'), 4500);
-}
-
-function updateClock() {
-  const delta = UNLOCK - Date.now();
-  if (delta <= 0) {
-    unlocked = true;
-    $('countdown').hidden = true;
-    $('hero-eyebrow').textContent = 'The moment is here';
-    $('hero-sub').textContent = 'HAPPY 21ST BIRTHDAY, JASON.';
-    $('status').textContent = '✦ THE LETTER IS OPEN FOR YOU ✦';
-    return;
-  }
-  const totalSeconds = Math.floor(delta / 1000);
-  const days = Math.floor(totalSeconds / 86400);
-  const hours = Math.floor((totalSeconds % 86400) / 3600);
-  const minutes = Math.floor((totalSeconds % 3600) / 60);
-  const seconds = totalSeconds % 60;
-  $('days').textContent = String(days).padStart(2, '0');
-  $('hours').textContent = String(hours).padStart(2, '0');
-  $('minutes').textContent = String(minutes).padStart(2, '0');
-  $('seconds').textContent = String(seconds).padStart(2, '0');
-}
-
-function renderLetter() {
-  const box = $('letter-content');
-  box.replaceChildren();
-  LETTER_PARAGRAPHS.forEach(text => {
-    const p = document.createElement('p');
-    p.textContent = text;
-    box.appendChild(p);
-  });
-}
-
-function renderGallery() {
-  const gallery = $('gallery');
-  gallery.replaceChildren();
-  PHOTOS.forEach(([title, caption], index) => {
-    const article = document.createElement('article');
-    article.className = 'memory';
-    article.style.setProperty('--tilt', ((index % 4) - 1.5) * 0.7 + 'deg');
-    article.innerHTML = `
-      <div class="photo"><img src="${IMAGE_NAMES[index]}" alt="${title}" loading="lazy"></div>
-      <div class="caption">${title}</div>
-      <div class="meta">${caption}</div>
-    `;
-    gallery.appendChild(article);
-  });
-}
-
-$('envelope').addEventListener('click', () => {
-  if (!unlocked) {
-    const mins = Math.max(1, Math.ceil((UNLOCK - Date.now()) / 60000));
-    toast('Sealed until midnight, December 4. ' + mins.toLocaleString() + ' minutes to go.');
-    return;
-  }
-  open = !open;
-  $('paper').classList.toggle('show', open);
-  $('envelope').style.transform = open ? 'translateY(-8px)' : '';
-  $('status').textContent = open ? '✦ LETTER OPEN ✦' : '✦ CLICK THE ENVELOPE TO OPEN AGAIN ✦';
-  if (open) {
-    $('paper').scrollIntoView({ behavior: 'smooth', block: 'center' });
-  }
-});
-
-$('close-letter').addEventListener('click', () => {
-  open = false;
-  $('paper').classList.remove('show');
-  $('status').textContent = '✦ CLICK THE ENVELOPE TO OPEN AGAIN ✦';
-});
-
-renderLetter();
-renderGallery();
-updateClock();
-setInterval(updateClock, 1000);
-</script>
-</body>
-</html>
+const PHOTOS=[['The beginning','A favorite day to remember'],['One of my favorite days','A little piece of us'],['The little things','The ordinary moments that meant everything'],['I still laugh about this','The kind of smile that stayed'],['The best kind of ordinary','The calm between all the chaos'],['Never a dull moment','Every memory somehow became a favorite'],['Just us','The kind of moment you wanted to keep forever'],['A moment worth keeping','This one always felt like home'],['Then and now','The more I look back, the more I treasure it'],['Another favorite','A small piece of a bigger story'],['Everything in between','All the little things that made it real'],['More to come','The story isn’t over yet']];
+const IMAGE_NAMES=['IMG_0352.jpeg','IMG_4427.jpeg','IMG_4426.jpeg','IMG_4429.jpeg','IMG_4425.jpeg','IMG_5695.jpeg','IMG_4428.jpeg','IMG_8727.jpeg','IMG_0386.jpeg','DSCF2448.jpeg','IMG_7767.jpeg','IMG_4697.jpeg'];
+const $=id=>document.getElementById(id);let unlocked=false,open=false,timer;
+function toast(m){$('toast').textContent=m;$('toast').classList.add('show');clearTimeout(timer);timer=setTimeout(()=>$('toast').classList.remove('show'),4500)}
+function updateClock(){let d=UNLOCK-Date.now();if(d<=0){unlocked=true;$('countdown').hidden=true;$('hero-eyebrow').textContent='The moment is here';$('hero-sub').textContent='HAPPY 21ST BIRTHDAY, JASON.';$('status').textContent='✦ THE LETTER IS OPEN FOR YOU ✦';return}const totalSeconds=Math.floor(d/1000);const days=Math.floor(totalSeconds/86400);const hours=Math.floor((totalSeconds%86400)/3600);const minutes=Math.floor((totalSeconds%3600)/60);const seconds=totalSeconds%60;$('days').textContent=String(days).padStart(2,'0');$('hours').textContent=String(hours).padStart(2,'0');$('minutes').textContent=String(minutes).padStart(2,'0');$('seconds').textContent=String(seconds).padStart(2,'0')}
+function renderLetter(){const box=$('letter-content');box.replaceChildren();LETTER_PARAGRAPHS.forEach(text=>{const p=document.createElement('p');p.textContent=text;box.append(p)})}
+function renderGallery(){const gallery=$('gallery');gallery.replaceChildren();PHOTOS.forEach(([title,caption],i)=>{const article=document.createElement('article');article.className='memory';article.style.setProperty('--tilt',((i%4)-1.5)*.7+'deg';article.innerHTML=`<div class="photo"><img src="${IMAGE_NAMES[i]}" alt="${title}" loading="lazy"></div><div class="caption">${title}</div><div class="meta">${caption}</div>`;gallery.append(article)})}
+$('envelope').addEventListener('click',()=>{if(!unlocked){const mins=Math.max(1,Math.ceil((UNLOCK-Date.now())/60000));toast('Sealed until midnight, December 4. '+mins.toLocaleString()+' minutes to go.');return}open=!open;$('paper').classList.toggle('show',open);$('envelope').style.transform=open?'translateY(-8px)':'';$('status').textContent=open?'✦ LETTER OPEN ✦':'✦ CLICK THE ENVELOPE TO OPEN AGAIN ✦';if(open){$('paper').scrollIntoView({behavior:'smooth',block:'center'})}});
+$('close-letter').addEventListener('click',()=>{open=false;$('paper').classList.remove('show');$('status').textContent='✦ CLICK THE ENVELOPE TO OPEN AGAIN ✦'});
+renderLetter();renderGallery();updateClock();setInterval(updateClock,1000);</script></body></html>
